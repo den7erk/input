@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16 homework</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo logo">
+						<div class="logo__items">
+							<div class="logo__item">
+								<img src="img/logo/logo.svg" alt="logo" class="logo__image">
+							</div>
+							<div class="logo__item">
+								<img src="img/logo/logo-name.svg" alt="logo" class="logo__name">
+							</div>
+						</div>
+					</div>
+					<div class="header__contacts contacts">
+						<div class="contacts__items">
+							<div class="contacts__item item">
+								<div class="item__image">
+									<img src="img/logo/time.svg" alt="time" class="item__img">
+								</div>
+								<div class="item__body">
+									<div class="item__title">
+										BOARDING HOURS
+									</div>
+									<div class="item__sub-title">
+										Mon - Sat: 7:00 am - 6:00 pm
+									</div>
+								</div>
+							</div>
+							<div class="contacts__item contacts__item_width item">
+								<div class="item__image">
+									<img src="img/logo/phone.svg" alt="phone" class="item__img">
+								</div>
+								<div class="item__body">
+									<div class="item__title">
+										CALL US
+									</div>
+									<div class="item__sub-title">
+										(55 5) Pup-Cares
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__button button">
+						<div class="button__row">
+							<a href="#" class="button__btn">Make an Appointment</a>
+						</div>
+					</div>
+				</div>
+				<nav class="header__menu"></nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<form action="#" class="main__form form">
+					<div class="form__registration">
+						<h3 class="form__logo">Make an appointment</h3>
+						<div class="form__userdata">
+							<div class="form__item">
+								<input class="form__name" name="username" type="text" placeholder="name" autocomplete="off">
+							</div>
+							<div class="form__item">
+								<input class="form__email" autocomplete="off" name="useremail" type="email" placeholder="email">
+							</div>
+							<div class="form__item">
+								<input class="form__phone" name="userphone" type="number" placeholder="phone number"
+									autocomplete="off">
+							</div>
+							<div class="form__item">
+								<select name="service" class="form__select">
+									<option value="1">select service</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__textarea-row">
+							<textarea class="form__textarea" placeholder="Tell us about your puppers include his/her name"
+								name="textarea"></textarea>
+						</div>
+						<div class="button-row"><button class="form__button">Make an Appointment</button></div>
+					</div>
+				</form>
+				<form action="#" method="get" class="form__summary summary">
+					<h3 class="summary__lable">Summary</h3>
+					<div class="summary__selects">
+						<select size="3" name="summary" required class="summary__select">
+							<option value="estimate">Estimate Shipping and Tax</option>
+							<option value="tax-1">Tax-1</option>
+							<option value="tax-2">Tax-2</option>
+						</select>
+						<h3 class="summary__destination">Enter your destination to get a shipping estimate.</h3>
+						<div class="summary__country">
+							<h4 class="summary__country">Country</h4>
+							<div class="summary__contry-items">
+								<select name="select" class="summary__contry-item">
+									<option class="australia" value="Australia">Australia</option>
+								</select>
+							</div>
+							<div class="summary__city input">
+								<h4 class="input__logo">State/Province</h4>
+								<div class="input__items">
+									<input class="input__item" required name="province" type="text" autocomplete="off">
+								</div>
+							</div>
+							<div class="summary__zip input">
+								<h4 class="input__logo">Zip/Postal Code</h4>
+								<div class="input__items">
+									<input class="input__item" required name="zip/postal-cod" type="number" autocomplete="off">
+								</div>
+							</div>
+						</div>
+						<div class="summary__delivery delivery">
+							<div class="delivery__items">
+								<div class="delivery__item">
+									<div class=" delivery__standart">
+										<h4 class="delivery__name">Standard Rate</h4>
+										<input class="delivery__input" id="standart" type="radio" name="delivery">
+										<label class="delivery__logo" for="standart">Price may vary depending on
+											the
+											item/destination. Shop Staff
+											will contact you. $21.00</label>
+									</div>
+								</div>
+								<div class="delivery__item">
+									<div class=" delivery__from-store">
+										<h4 class="delivery__name">Pickup from store</h4>
+										<input class="delivery__input" id="from-store" type="radio" name="delivery">
+										<label class="delivery__logo" for="from-store">1234 Street Adress City
+											Address, 1234 $0.00
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<select name="summary" class="summary__select">
+							<option value="Estimate">Apply Discount Code</option>
+							<option value="Estimate">Estimate Shipping and Tax</option>
+							<option value="Estimate">Estimate Shipping and Tax</option>
+						</select>
+						<div class="summary__discount input">
+							<h4 class="input__discount">Enter discount code</h4>
+							<div class="input__items">
+								<input class="input__item" name="discount" type="number" autocomplete="off">
+							</div>
+						</div>
+						<div class="summary__button">
+							<button class="summary__button-apply">Apply Discount</button>
+						</div>
+					</div>
+				</form>
+				<form action="#" method="get" class="form__registered registered">
+					<h3 class="registered__lable">Registered Customers</h3>
+					<h4 class="registered__destination">If you have an account, sign in with your email address.</h4>
+					<div class="registered__data data">
+						<div class="data__items">
+							<div class="data__item">
+								<h4 class="data__name">Email</h4>
+								<input class="data__email" placeholder="Your Name" required name="email" type="email"
+									autocomplete="off">
+							</div>
+							<div class="data__item">
+								<h4 class="data__name">Password</h4>
+								<input class="data__password" placeholder="Your Password" required name="password"
+									type="password" autocomplete="off">
+							</div>
+						</div>
+					</div>
+					<div class="registered__button">
+						<button class="registered__button-apply">Sign In</button>
+						<a href="#" class="registered__link">Forgot Your Password?</a>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+</body>
+
+</html>
